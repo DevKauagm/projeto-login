@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+@media screen and (min-width: 760px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+        background-attachment: fixed;
+    }
+
+    main {
+        padding-top: 20px;
+        padding-left: 220px;
+        background-size: 200px 100%;
+        background-position: left center;
+    }
+
+    section span {
+        transform: translate(20%, 30%);
+    }
+
+    section input {
+        width: 80%;
+        transform: translate(-2%, 0%);
+    }
+}

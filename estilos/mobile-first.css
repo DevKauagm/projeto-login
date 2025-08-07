@@ -28,8 +28,9 @@ body {
 }
 
 main {
-    background: white url(../imagens/pexels-technobulka-2908978.jpg) center top / contain no-repeat;
-    width: 300px;
+    background: white url(../imagens/pexels-technobulka-2908978.jpg) center top / 100% 35% no-repeat;
+    min-width: 300px;
+    width: 50vw;
     margin: 100px auto;
     padding: 10px;
     padding-top: 220px;
@@ -42,17 +43,18 @@ main h1 {
 }
 
 section {
-    display: inline-block;
+    display: block;
+    text-align: end;
     background-color: var(--cor2);
-    margin: 5px 0px 10px 38px;
-    padding: 0px 2px 2px 0px;
+    margin: 5px auto;
     border-radius: 10px;
+    width: 90%;
 }
 
 section span {
     color: white;
-    margin: 0px 5px;
-    transform: translate(12%, 35%);
+    transform: translate(10%, 35%);
+    margin-right: 5%;
     font-variation-settings: 'FILL' 10;
 }
 
@@ -60,9 +62,10 @@ section input {
     background-color: var(--cor1);
     border-radius: 10px;
     padding: 10px;
+    width: 70%;
 }
 
-main > input {
+main > form > input {
     display: block;
     margin: auto;
     width: 80%;
@@ -73,15 +76,24 @@ main > input {
     cursor: pointer;
 }
 
+main > form > input:hover {
+    background-color: #183635;
+}
+
 main > a {
     display: block;
     margin: 10px auto;
     width: 72%;
-    padding: 10px;
+    padding: 12px;
     color: black;
     text-align: center;
     font-size: 0.8em;
     font-variation-settings: 'opsz' 5, 'wght' 200;
     border: 2px solid var(--cor1);
     border-radius: 5px;
+}
+
+main > a:hover {
+    background-color: var(--cor1);
+    border-color: var(--cor2);
 }
