@@ -10,9 +10,10 @@
 </head>
 <body>
     <main>
-        <h1>Login</h1>
-        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+        <section id="imagem"></section>
         <form action="login.py" method="get">
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
             <section>
                 <label for="iuser"><span class="material-symbols-outlined">person</span></label>
                 <input type="text" name="user" id="iuser" autocomplete="nickname" required>
@@ -22,8 +23,8 @@
                 <input type="password" name="password" id="ipassword" autocomplete="current-password" required minlength="8">
             </section>
             <input type="submit" value="Entrar">
+            <a href="#">Esqueci a senha<span class="material-symbols-outlined">mail</span></a>
         </form>
-        <a href="#">Esqueci a senha<span class="material-symbols-outlined">mail</span></a>
     </main>
 </body>
 </html>

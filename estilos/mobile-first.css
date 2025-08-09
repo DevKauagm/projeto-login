@@ -28,13 +28,14 @@ body {
 }
 
 main {
-    background: white url(../imagens/pexels-technobulka-2908978.jpg) center top / 100% 35% no-repeat;
+    background-color: white;
     min-width: 300px;
     width: 50vw;
     margin: 100px auto;
-    padding: 10px;
-    padding-top: 220px;
     border-radius: 10px;
+    overflow: hidden;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease-out;
 }
 
 main h1 {
@@ -42,33 +43,41 @@ main h1 {
     text-align: center;
 }
 
-section {
-    display: block;
-    text-align: end;
-    background-color: var(--cor2);
-    margin: 5px auto;
-    border-radius: 10px;
-    width: 90%;
+main > section#imagem {
+    background: white url(../imagens/pexels-technobulka-2908978.jpg) center top / cover no-repeat;
+    height: 200px;
 }
 
-section span {
+form {
+    padding: 10px;
+}
+
+form > section {
+    background-color: var(--cor2);
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+label > span {
     color: white;
-    transform: translate(10%, 35%);
-    margin-right: 5%;
+    width: 40px;
+    transform: translate(30%, 25%);
     font-variation-settings: 'FILL' 10;
 }
 
-section input {
+form > section > input {
     background-color: var(--cor1);
+    padding: 5px;
     border-radius: 10px;
-    padding: 10px;
-    width: 70%;
+    width: calc(100% - 60px);
+    height: 100%;
+    transform: translateY(-10%);
 }
 
-main > form > input {
+main > form > input[type=submit] {
     display: block;
     margin: auto;
-    width: 80%;
+    width: 100%;
     padding: 15px;
     color: white;
     border-radius: 5px;
@@ -76,15 +85,15 @@ main > form > input {
     cursor: pointer;
 }
 
-main > form > input:hover {
+main > form > input[type=submit]:hover {
     background-color: #183635;
 }
 
-main > a {
+form > a {
     display: block;
-    margin: 10px auto;
-    width: 72%;
-    padding: 12px;
+    margin: 10px 0px;
+    width: calc(100% - 20px);
+    padding: 10px;
     color: black;
     text-align: center;
     font-size: 0.8em;
